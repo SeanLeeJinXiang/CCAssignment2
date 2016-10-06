@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <title>Mood Quiz - Can I Guess Your Mood? | Question {{counter}}</title>
+ 
+ 
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+ 
+ 
+</head>
+ 
+<body>
+ 
+    <div class="container">
+        <div class="header">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation" class="active"><a href="/">Home</a>
+                    </li>
+                </ul>
+            </nav>
+            <h3 class="text-muted">James Snee, s3369721 | Sean Lee, s3301214</h3>
+        </div>
+ 
+        <div class="jumbotron">
+            <h1>Question {{counter}}</h1>
+            <p class="lead"></p>
+			{% if question %}
+				<p>{{ question }}</p>
+			{% endif %}
+			Progress: {{percent}}%
+			<progress value="{{percent}}" max="100">
+			</progress>
+			<br></br>
+            <p><a class="btn btn-lg btn-success" href="pressButton1" role="ans1">{{answer1}}</a>
+            </p>
+			<p><a class="btn btn-lg btn-success" href="pressButton2" role="ans2">{{answer2}}</a>
+            </p>
+			<p><a class="btn btn-lg btn-success" href="pressButton3" role="ans3">{{answer3}}</a>
+            </p>
+			<p><a class="btn btn-lg btn-success" href="pressButton4" role="ans4">{{answer4}}</a>
+            </p>
+        </div>
+ 
+        <footer class="footer">
+            <p>&copy; James Snee and Sean Lee, for RMIT University Cloud Computing Assignment 2, 2016</p>
+        </footer>
+ 
+    </div>
+</body>
+ 
+</html>

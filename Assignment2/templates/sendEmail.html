@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <title>Mood Quiz - Can I Guess Your Mood? | Send Email</title>
+ 
+ 
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+ 
+ 
+</head>
+ 
+<body>
+ 
+    <div class="container">
+        <div class="header">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation" class="active"><a href="/">Home</a>
+                    </li>
+                </ul>
+            </nav>
+            <h3 class="text-muted">James Snee, s3369721 | Sean Lee, s3301214</h3>
+        </div>
+ 
+        <div class="jumbotron">
+            <h1>Send Email</h1>
+            <p class="lead"></p>
+			<p>Please enter your email address below and click submit:</p>
+			<form action="sendEmail" method="Post">
+			<input type="email" id="email" name="email"><br>
+			<br></br>
+			<input class="btn btn-lg btn-success" onclick="loadingString()" id="subButton" type="submit" value="Submit!" role="button">
+			</form>
+        </div>
+		
+		<script type="text/javascript">
+		function loadingString() {
+			document.getElementById("subButton").value = "Loading...";
+			document.getElementById("subButton").innerHTML = "Loading...";
+		}
+		</script>
+
+ 
+        <footer class="footer">
+            <p>&copy; James Snee and Sean Lee, for RMIT University Cloud Computing Assignment 2, 2016</p>
+        </footer>
+ 
+    </div>
+</body>
+ 
+</html>
